@@ -74,12 +74,12 @@ public class PokemonBattleGUI extends JFrame implements Serializable {
 		//Here is the animation used
 		// show Pokemon
 		JLabel pkm001Label = new JLabel();
-		ImageIcon pkm001Icon = new ImageIcon("C:\\Users\\Xavier\\eclipse-workspace\\GUIPokemon\\src\\app\\bulbasaurBack.gif");
+		ImageIcon pkm001Icon = new ImageIcon("C:\\Users\\Xavier\\git\\PokemonFinal\\PokemonFinal\\src\\app\\bulbasaurBack.gif");
 		pkm001Label.setIcon(pkm001Icon);
 
 		JLabel pkm004Label = new JLabel();
 		ImageIcon pkm004Icon = new ImageIcon(
-				"C:\\Users\\Xavier\\eclipse-workspace\\GUIPokemon\\src\\app\\charmander.gif");
+				"C:\\Users\\Xavier\\git\\PokemonFinal\\PokemonFinal\\src\\app\\charmander.gif");
 		pkm004Label.setIcon(pkm004Icon);
 
 		JPanel pokemonPanel = new JPanel(new GridLayout(1, 2)); // 1 row, 2 columns
@@ -178,6 +178,7 @@ public class PokemonBattleGUI extends JFrame implements Serializable {
 	}
 
 
+	//this is the method that handles the exception. It prevents the pokemons name from being longer than 12 characters.  
 	private void setNameForPlayerPokemon() {
 	    if (!SwingUtilities.isEventDispatchThread()) {
 	        SwingUtilities.invokeLater(this::setNameForPlayerPokemon);
